@@ -25,6 +25,7 @@ public:
 
 	Matrix3 GetTranspose();
 
+
 	Matrix3& operator =(const Matrix3& a_RHS);
 	Matrix3 operator +(Matrix3& a_RHS);
 	Matrix3 operator -(Matrix3& a_RHS);
@@ -33,6 +34,7 @@ public:
 	Matrix3 operator +=(Matrix3& a_RHS);
 	Matrix3 operator -=(Matrix3& a_RHS);
 	Matrix3 operator *=(Matrix3& a_RHS);
+	bool operator ==(Matrix3& a_RHS);
 
 	float m_matrixArray[3][3];
 

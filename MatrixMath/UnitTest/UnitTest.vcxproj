@@ -41,8 +41,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\adrian.caple\Documents\GitHub\gtest-1.7.0\include;C:\Users\adrian.caple\Documents\GitHub\gtest-1.7.0;C:\Users\adrian.caple\Documents\GitHub\MatrixLib\MatrixMath;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\adrian.caple\Documents\GitHub\gtest-1.7.0\msvc\gtest-md2\Debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)$(SolutionDir).\..\MatrixMath\;$(SolutionDir)..\..\GoogleTest\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\..\GoogleTest\msvc\gtest-md2\Debug\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>

@@ -5,10 +5,18 @@
 #include "gtest/gtest.h"
 #include "../MatrixMath/Matrix3.h"
 
-TEST(foo, bar)
+TEST(matrix3, Transpose)
 {
-	Matrix3 m1;
-	EXPECT_TRUE(true);
+	Matrix3 m1(
+		00,01,02,
+		10,11,12,
+		20,21,22);
+	Matrix3 m2(
+		00,10,20,
+		01,11,21,
+		02,12,22);
+	m1.Transpose();
+	EXPECT_TRUE(m1 == m2);
 }
 
 int _tmain(int argc, _TCHAR* argv[])

@@ -75,6 +75,22 @@ Matrix3& Matrix3::operator=(const Matrix3& a_RHS)
 	return *this;
 }
 
+bool Matrix3::operator==(Matrix3& a_RHS)
+{
+	for (int col = 0; col < 3; col++)
+	{
+		for (int row = 0; row < 3; row++)
+		{
+			if (m_matrixArray[col][row] != a_RHS.m_matrixArray[col][row])
+			{
+				return false;
+			}
+
+		}
+	}
+	return true;
+}
+
 
 
 Matrix3 Matrix3::Identity()
@@ -89,7 +105,20 @@ Matrix3 Matrix3::Identity()
 
 Matrix3& Matrix3::Transpose()
 {
+	Matrix3 temp;
+	temp.m_matrixArray[0][0] = m_matrixArray[0][0];
+	temp.m_matrixArray[0][1] = m_matrixArray[1][0];
+	temp.m_matrixArray[0][2] = m_matrixArray[2][0];
 
+	temp.m_matrixArray[1][0] = m_matrixArray[0][1];
+	temp.m_matrixArray[1][1] = m_matrixArray[1][1];
+	temp.m_matrixArray[1][2] = m_matrixArray[2][1];
+
+	temp.m_matrixArray[2][0] = m_matrixArray[0][2];
+	temp.m_matrixArray[2][1] = m_matrixArray[1][2];
+	temp.m_matrixArray[2][2] = m_matrixArray[2][2];
+	
+	*this = temp;
 	return *this;
 }
 
