@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MatrixMath", "MatrixMath\MatrixMath.vcxproj", "{B78283F8-5531-479C-9CD6-E2E45CFF5273}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTest", "UnitTest\UnitTest.vcxproj", "{23C9282A-8873-4ECE-8887-710E09E1F0DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B78283F8-5531-479C-9CD6-E2E45CFF5273}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B78283F8-5531-479C-9CD6-E2E45CFF5273}.Debug|Win32.Build.0 = Debug|Win32
+		{B78283F8-5531-479C-9CD6-E2E45CFF5273}.Release|Win32.ActiveCfg = Release|Win32
+		{B78283F8-5531-479C-9CD6-E2E45CFF5273}.Release|Win32.Build.0 = Release|Win32
+		{23C9282A-8873-4ECE-8887-710E09E1F0DA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{23C9282A-8873-4ECE-8887-710E09E1F0DA}.Debug|Win32.Build.0 = Debug|Win32
+		{23C9282A-8873-4ECE-8887-710E09E1F0DA}.Release|Win32.ActiveCfg = Release|Win32
+		{23C9282A-8873-4ECE-8887-710E09E1F0DA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
